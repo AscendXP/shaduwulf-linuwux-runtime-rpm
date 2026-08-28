@@ -1,0 +1,12 @@
+<services>
+  <service name="obs_scm">
+    <param name="url">https://github.com/xshaduwulfx/shaduwulf-linuwux-runtime.git</param>
+    <param name="scm">git</param>
+    <param name="revision">main</param>
+    <param name="versionformat">@PARENT_TAG@</param>
+    <param name="versionrewrite-pattern">v(.*)</param>
+    <param name="changesgenerate">enable</param>
+  </service>
+  <service name="set_version"/>
+  <service name="download_files"/>
+</services>
